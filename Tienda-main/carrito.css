@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.active{
+    color: blueviolet;
+}
+main .container {
+    padding: 50px 0;
+    text-align: center;
+}
+
+main h2 {
+    margin-bottom: 30px;
+}
+
+.cart-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.cart-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cart-item img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+.cart-item h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.cart-item p {
+    margin-top: 5px;
+}
+
+.total {
+    margin-top: 30px;
+}
+
+.checkout {
+    margin-top: 20px;
+}
+
+.checkout button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout button:hover {
+    background-color: rgb(101, 33, 165);
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}

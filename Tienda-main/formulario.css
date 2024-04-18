@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 30px;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+    padding: 15px 0;
+}
+
+header .logo {
+    margin: 0;
+    padding: 10px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.container h2 {
+    font-size: 1.9em;
+    text-align: center;
+}
+
+.container form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.container .form-group {
+    margin-bottom: 20px;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container input[type="text"],
+.container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+
+.container input[type="submit"]:hover {
+    background-color: rgb(101, 33, 165);
+}
+
+footer {
+    background-color: rgb(230, 230, 230);
+    padding: 15px 0;
+}
+
+footer p {
+    margin: 0;
+    padding: 10px 0;
+    color: rgb(100, 100, 100);
+}

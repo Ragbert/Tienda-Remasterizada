@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompraYa!</title>
+    <link rel="stylesheet" href="compra.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">CompraYa!</p>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="compra.html" class="active">Ropa</a>
+                <a href="carrito.html">Carrito</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="lists">
+            <h2 class="title">Ropa y más</h2>
+            <div class="container">
+                <div class="ropa" onclick="addToCart(this)">
+                    <img src="images/dress.png" alt="Ropa">
+                    <h2 class="title-ropa">Vestido Maria</h2>
+                    <p><strong>Tallas disponibles:</strong> S,M,L</p>
+                    <p><strong>Colores:</strong> Rojo, Rosa y Azul</p>
+                    <p class="ropa-price">$20</p>
+                    <img class="icon" src="images/cartshop.png" alt="logo de compra">
+                </div>
+                <div class="ropa" onclick="addToCart(this)">
+                    <img src="images/dress2.png" alt="Ropa">
+                    <h2>Vestido Carla</h2>
+                    <p><strong>Tallas disponibles:</strong> S,M,L</p>
+                    <p><strong>Colores:</strong> Blanco, Negro y Azul</p>
+                    <p class="ropa-price">$80</p>
+                    <img class="icon" src="images/cartshop.png" alt="logo de compra">
+                </div>
+                <div class="ropa" onclick="addToCart(this)">
+                    <img src="images/dress3.png" alt="Ropa">
+                    <h2>Vestido Massiel</h2>
+                    <p><strong>Tallas disponibles:</strong> S,M,L</p>
+                    <p><strong>Colores:</strong> Rojo, Rosa y Azul</p>
+                    <p class="ropa-price">$100</p>
+                    <img class="icon" src="images/cartshop.png" alt="logo de compra">
+                </div>
+                <div class="ropa" onclick="addToCart(this)">
+                    <img src="images/pants1.png" alt="Ropa">
+                    <h2>Jeans</h2>
+                    <p><strong>Tallas disponibles:</strong>M,L</p>
+                    <p><strong>Colores:</strong>Azul</p>
+                    <p class="ropa-price">$70</p>
+                    <img class="icon" src="images/cartshop.png" alt="logo de compra">
+                </div>
+                <div class="ropa" onclick="addToCart(this)">
+                    <img src="images/pants2.png" alt="Ropa">
+                    <h2>Bermuda</h2>
+                    <p><strong>Tallas disponibles:</strong>L</p>
+                    <p><strong>Colores:</strong> Rojo, Rosa y Azul</p>
+                    <p class="ropa-price">$50</p>
+                    <img class="icon" src="images/cartshop.png" alt="logo de compra">
+                </div>
+                <div class="ropa" onclick="addToCart(this)">
+                    <img src="images/pants3.png" alt="Ropa">
+                    <h2>Leggins</h2>
+                    <p><strong>Tallas disponibles:</strong>Oversize</p>
+                    <p><strong>Colores:</strong> Rojo, Rosa y Azul</p>
+                    <p class="ropa-price">$56</p>
+                    <img class="icon" src="images/cartshop.png" alt="logo de compra">
+                </div>
+                <div class="ropa" onclick="addToCart(this)">
+                    <img src="images/shirt.png" alt="Ropa">
+                    <h2>Camisa Mujer</h2>
+                    <p><strong>Tallas disponibles:</strong> S,M,L</p>
+                    <p><strong>Colores:</strong>Negro</p>
+                    <p class="ropa-price">$50</p>
+                    <img class="icon" src="images/cartshop.png" alt="logo de compra">
+                </div>
+                <div class="ropa" onclick="addToCart(this)">
+                    <img src="images/shirt1.png" alt="Ropa">
+                    <h2>Sweater</h2>
+                    <p><strong>Tallas disponibles:</strong>S</p>
+                    <p><strong>Colores:</strong> Rojo y Azul</p>
+                    <p class="ropa-price">$89.90</p>
+                    <img class="icon" src="images/cartshop.png" alt="logo de compra">
+                </div>
+                <div class="ropa" onclick="addToCart(this)">
+                    <img src="images/shirt2.png" alt="Ropa">
+                    <h2>Camisa Hombre</h2>
+                    <p><strong>Tallas disponibles:</strong> S,M,L</p>
+                    <p><strong>Colores:</strong> Rojo y Azul</p>
+                    <p class="ropa-price">$60</p>
+                    <img class="icon" src="images/cartshop.png" alt="logo de compra">
+                </div>
+                <div class="ropa" onclick="addToCart(this)">
+                    <img src="images/hat.png" alt="Ropa">
+                    <h2>Sombrero</h2>
+                    <p><strong>Colores:</strong> Rojo, Rosa y Azul</p>
+                    <p class="ropa-price">$40.50</p>
+                    <img class="icon" src="images/cartshop.png" alt="logo de compra">
+                </div>
+                <div class="ropa" onclick="addToCart(this)">
+                    <img src="images/backpack.png" alt="Ropa">
+                    <h2>Mochila</h2>
+                    <p><strong>Colores:</strong> Verde, Rojo, Rosa y Azul</p>
+                    <p class="ropa-price">$150</p>
+                    <img class="icon" src="images/cartshop.png" alt="logo de compra">
+                </div>
+                <div class="ropa" onclick="addToCart(this)">
+                    <img src="images/sneackers.png" alt="Ropa">
+                    <h2>Tennis</h2>
+                    <p><strong>Tallas disponibles:</strong>Todas</p>
+                    <p><strong>Colores:</strong> Rojo, Rosa y Azul</p>
+                    <p class="ropa-price">$70.80</p>
+                    <img class="icon" src="images/cartshop.png" alt="logo de compra">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; CompraYa 2024</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

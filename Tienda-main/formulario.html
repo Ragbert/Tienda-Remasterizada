@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompraYa!</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">CompraYa!</p>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="compra.html">Ropa</a>
+                <a href="carrito.html">Carrito</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>Formulario de Aplicación</h2>
+            <form id="contact_form" action="insertar_comentario.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <label for="text">Comentario:</label>
+                    <input type="text" id="text" name="text" placeholder="Asunto" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; CompraYa 2024</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('contact_form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            alert('El formulario ha sido enviado');
+
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('text').value = '';
+        });
+    </script>
+</body>
+
+</html>

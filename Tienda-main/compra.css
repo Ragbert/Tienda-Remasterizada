@@ -1,0 +1,89 @@
+.lists {
+    padding: 90px;
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+    padding-top: 50px;
+}
+
+.active{
+    color: blueviolet;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.ropa {
+    border: black;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 7px blueviolet;;
+    flex-basis: calc(30% - 10px);
+    transition: cursor 0.3s ease;
+}
+.ropa:hover{
+    cursor: pointer;
+    background-color: rgb(30,30,30);;
+    color: white;
+}
+
+
+.ropa img {
+    max-width: 55%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+.ropa h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.ropa p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+.ropa-price {
+    font-weight: bold;
+    color: rgb(6, 116, 48);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .ropa {
+        width: calc(33.33% - 20px);
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .ropa {
+        flex-basis: calc(100% - 20px);
+    }
+    .texthide {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ropa {
+        flex-basis: calc(100% - 20px);
+    }
+}
